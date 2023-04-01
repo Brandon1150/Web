@@ -30,14 +30,11 @@ var busqueda = lenguajes.find(function(lenguaje){
 return lenguaje == "Php"
 });
 
-<<<<<<< HEAD
  console.log(busqueda)
-=======
  console.log(busqueda);
  console.log(busqueda_precio);
 
  var precios = [10 , 20, 50, 80, 12];
->>>>>>> 949283a2477d09992d901c69f709c229b21ba575
 
  //MISMO PROCEDIMIENTO PERO CON FUNCIÓN DE FECHA
  var busqueda = lenguajes.find(lenguaje => lenguaje =="Php");
