@@ -30,11 +30,19 @@ var busqueda = lenguajes.find(function(lenguaje){
 return lenguaje == "Php"
 });
 
- console.log(busqueda)
+ console.log(busqueda);
+ console.log(busqueda_precio);
+
+ var precios = [10 , 20, 50, 80, 12];
 
  //MISMO PROCEDIMIENTO PERO CON FUNCIÓN DE FECHA
  var busqueda = lenguajes.find(lenguaje => lenguaje =="Php");
 
  //BUSQUEDA CON INDEX
  var busqueda = lenguajes.findIndex(lenguaje => lenguaje =="Php");
+ var busqueda_precio = precios.some(precio => precio > 80); //Para buscar si cumplen con una condiciòn
+ 
+ 
 
+
+ 
