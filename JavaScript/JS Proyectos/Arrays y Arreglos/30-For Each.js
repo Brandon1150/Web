@@ -41,13 +41,10 @@ return lenguaje == "Php"
 
  //BUSQUEDA CON INDEX
  var busqueda = lenguajes.findIndex(lenguaje => lenguaje =="Php");
-<<<<<<< HEAD
 
-=======
  var busqueda_precio = precios.some(precio => precio > 80); //Para buscar si cumplen con una condiciòn
  
  
 
 
  
->>>>>>> 949283a2477d09992d901c69f709c229b21ba575
