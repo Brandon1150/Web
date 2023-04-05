@@ -1,8 +1,8 @@
 "use strict";
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function () { //EVENTO LOAD
   function intervalo() {
-    var tiempo = setInterval(() => {
+    var tiempo = setInterval(() => { //SetTimeOut es para ejecutarse una vez
       console.log("Set interval ejecutado");
       var encabezado = document.querySelector("h1");
       if (encabezado.style.fontSize == "50px") {
