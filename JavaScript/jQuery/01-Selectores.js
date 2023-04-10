@@ -23,6 +23,30 @@ $(document).ready(function () {
     $(this).addClass('Zebra');
  })
 
+   // Selectores de etiqueta
+   var parrafos = $('p').css("cursor","pointer");
+   parrafos.click(function(){
+    var that = $(this);
+      if(!that.hasClass('grande')){
+      that.addClass('grande');
+
+   }else{
+      that.removeClass('grande');
+   }
+   });
+
+
+   // Selectore de atributo
+$('[title="Google"]').css('background','#ccc');
+$('[title="IlovePDF"]').css('background','blue').css('color','white');
+
+// Otros
+// $('p,a').addClass('margen-superior'); Seleccion de todas las clases
+
+// var busqueda = $('#caja').find('.resaltado');
+var busqueda = $('#caja.resaltado').eq(0).parent().parent().parent().find('[title="Google"]');
+console.log(busqueda);
+
  //console.log(mi_clase.eq(1)); //Sleccion de array
 
 })
