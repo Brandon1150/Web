@@ -13,3 +13,12 @@ continente ="Europeo";
 
 console.log(pais,continente,antiguedad);
 alert(pais_y_continente);
+
+var n1 = 20;
+var n2 = 20;
+
+
+var suma = "";
+
+suma = n1 + n2;
+console.log(suma)

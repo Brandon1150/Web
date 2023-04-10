@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script  Primera forma de cargar jQuery
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js" .js></script>
+    <script type="text/javascript" src="01-Selectores.js" .js></script>
+    <style>
+      .Zebra {
+        border: 5px dashed black;
+      }
+      .grande {
+        font-size: 30px;
+      }
+      .margen-superior {
+        display: block;
+        margin-top: 45px;
+      }
+      .resaltado{
+        border-bottom: 2px solid green;
+      }
+    </style>
+    <title>jQuery</title>
+  </head>
+  <body>
+    <h1>jQuery de Brandon</h1>
+    <ul>
+      <li>
+        <a href="https://www.google.com/?hl=es" title="Google">Ir a Google </a>
+      </li>
+      <li>
+        <a href="https://www.ilovepdf.com/es/word_a_pdf" title="IlovePDF"
+          >Ir a PDF</a
+        >
+      </li>
+    </ul>
+
+    <p id="rojo" class="sin_borde">Ejercicios de jQuery</p>
+    <p id="amarillo" class="Zebra">Selectores</p>
+    <p id="verde" class="sin_borde">Soy verde</p>
+    <p class="Zebra">Soy blanco</p>
+
+    <div id="caja">
+  <p>Hola soy una caja</p> 
+  <ul>
+    <li>Elemento 1</li>
+    <li class="resaltado">Elemento 2</li>
+  </ul>
+  <span class="resaltado">Soy un span</span>
+</div>
+
+  </body>
+</html>
