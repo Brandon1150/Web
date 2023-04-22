@@ -1,0 +1,29 @@
+body{
+    background-color: gray;
+    background-image: url(Img/Real.jpg);
+    background-repeat:repeat ;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(116, 6, 116);
+    color: aliceblue;
+}
+
+h2{
+    color: aliceblue;
+    border: 2px solid rebeccapurple;
+    background: white;
+    background-image: url(Img/cell.jpg);
+    background-size: 10%;
+}
+
+p{
+    color:black; 
+    border: 3px solid black;
+    background-image: url(Img/Bee.jpg);
+    background-size: 50%;
+}
