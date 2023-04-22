@@ -18,4 +18,7 @@ function reloadLinks() {
         that.text(enlace);
 
     });
+
+$(selector).append(content);
+
 }
