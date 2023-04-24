@@ -2,23 +2,35 @@
 //VARIABLES
 //Una variables es un contenedor de información
 
-var pais= "México";
-var continente= "Americano";
-var antiguedad= 2023;
-var pais_y_continente = pais + ' ' + continente;  //si esta línea la muevo debajo de los nuevos valores,guardará los nuevos valores
+// var pais= "México";
+// var continente= "Americano";
+// var antiguedad= 2023;
+// var pais_y_continente = pais + ' ' + continente;  //si esta línea la muevo debajo de los nuevos valores,guardará los nuevos valores
 
-pais = "Inglaterra";
-continente ="Europeo";
-// var pais_y_continente = pais + ' ' + continente;
+// pais = "Inglaterra";
+// continente ="Europeo";
+// // var pais_y_continente = pais + ' ' + continente;
 
-console.log(pais,continente,antiguedad);
-alert(pais_y_continente);
+// console.log(pais,continente,antiguedad);
+// alert(pais_y_continente);
 
-var n1 = 20;
-var n2 = 20;
+// var n1 = 20;
+// var n2 = 20;
 
 
-var suma = "";
+// var suma = "";
 
 suma = n1 + n2;
 console.log(suma)
+
+
+
+var inicio = 28/03/2023;
+var fecha = new date();
+var dias = fecha - inicio;
+
+    if(fecha = fecha){
+        
+    }
+    
+console.log("Los dias son:"+dias);
