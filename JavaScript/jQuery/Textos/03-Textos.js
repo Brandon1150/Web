@@ -2,8 +2,11 @@ $(document).ready(function () {
 
 
     reloadLinks();
-    $('#add_button').click(function () {
+    $('#add_button')
+    .removeAttr('disabled')
+    .click(function () {
         $('#menu').append('<li><a href="' + $("#add_link").val() + '"></a></li>');
+        $("#add_link").val('');
         reloadLinks(); // prepend,before,html
     });
 
