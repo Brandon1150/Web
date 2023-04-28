@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b1622;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  height: 70px;
+  width: 70px;
+  background-color: #f20044;
+  position: relative;
+  box-shadow: 10px 10px 90px #f20044;
+  animation: animHeart 0.6s linear infinite;
+  -webkit-animation: animHeart 0.6s linear infinite;
+}
+
+@keyframes animHeart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+    -webkit-transform: rotate(-45deg) scale(1.07);
+    -moz-transform: rotate(-45deg) scale(1.07);
+    -ms-transform: rotate(-45deg) scale(1.07);
+    -o-transform: rotate(-45deg) scale(1.07);
+  }
+
+  80% {
+    transform: rotate(-45deg) scale(1);
+    -webkit-transform: rotate(-45deg) scale(1);
+    -moz-transform: rotate(-45deg) scale(1);
+    -ms-transform: rotate(-45deg) scale(1);
+    -o-transform: rotate(-45deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+    -webkit-transform: rotate(-45deg) scale(0.8);
+    -moz-transform: rotate(-45deg) scale(0.8);
+    -ms-transform: rotate(-45deg) scale(0.8);
+    -o-transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.heart::before{
+    content:'Love You';
+    position: absolute;
+    height:70px;
+    width:70px;
+    background-color: #f20044;
+    box-shadow: -10px 10px 90px #f20044;
+    top: -50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.heart::after{
+    content:'';
+    position: absolute;
+    box-shadow: 10px -10px 90px #f20044;
+    height: 70px;
+    width: 70px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
