@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jQueryUI/jquery-ui-1.13.2/jquery-ui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jQueryUI/jquery-ui-1.13.2/jquery-ui.structure.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jQueryUI/jquery-ui-1.13.2/jquery-ui.theme.css"
+    />
+    <script type="text/javascript" src="js/jquery-3.6.4.min.js" .js></script>
+    <script
+      type="text/javascript"
+      src="js/jQueryUI/jquery-ui-1.13.2/jquery-ui.min.js"
+    ></script>
+    <script type="text/javascript" src="Interface.js" .js></script>
+    <title>jQuery UI</title>
+    <style>
+      .elemento {
+        width: 300px;
+        height: 200px;
+        border: 4px solid black;
+        background: lightblue;
+        margin: 20px;
+        float: left;
+      }
+
+      .lista-seleccionable li{
+        width: 80%;  
+        padding: 20px;
+        border: 1px solid #ccc;
+        list-style: none;
+        cursor: pointer;
+      }
+      ul.ui-selecting{background: green;}
+      ul.ui-selected{background:blue;}
+
+
+      #elemento-movido{
+        width: 100px;
+        height: 100px;
+        border: 4px solid red;
+      }
+
+      #area{
+        width: 300px;
+        height: 300px;
+        border: 4px solid green;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Aprendiendo jQueryUI</h1>
+    <dvi id="elemento-movido" class="elemento"></dvi>
+    <dvi id="area" class="elemento"></dvi>
+
+    <ul class="lista-seleccionable">
+      <li>Elder Lilies</li>
+      <li>Marvel</li>
+      <li>Souls</li>
+      <li>Crash Bandicoot</li>
+    </ul>
+
+    <div class="elemento">Hola soy un elemento</div>
+    <div class="elemento">Hola soy un elemento</div>
+    <div class="elemento">Hola soy un elemento</div>
+  </body>
+</html>
