@@ -36,36 +36,81 @@
         float: left;
       }
 
-      .lista-seleccionable li{
-        width: 80%;  
+      .lista-seleccionable li {
+        width: 80%;
         padding: 20px;
         border: 1px solid #ccc;
         list-style: none;
         cursor: pointer;
       }
-      ul.ui-selecting{background: green;}
-      ul.ui-selected{background:blue;}
+      ul.ui-selecting {
+        background: green;
+      }
+      ul.ui-selected {
+        background: blue;
+      }
 
-
-      #elemento-movido{
+      #elemento-movido {
         width: 100px;
         height: 100px;
         border: 4px solid red;
       }
 
-      #area{
+      #area {
         width: 300px;
         height: 300px;
         border: 4px solid green;
       }
-
-
     </style>
   </head>
   <body>
     <h1>Aprendiendo jQueryUI</h1>
-    <dvi id="elemento-movido" class="elemento"></dvi>
-    <dvi id="area" class="elemento"></dvi>
+    <hr />
+    <h3>Tooltip</h3>
+
+    <a href="#" title="Accede a la sección de mis datos de esta web"
+      >Mis datos</a
+    >
+    <a href="#" title="Logueate en esta web">Identificarse</a>
+    <a href="#" title="Ver todos mis amigos">Amigos</a>
+
+    <hr />
+
+    <hr />
+    <h3>Pestañas</h3>
+    <div id="Pestanas">
+      <ul>
+        <li><a href="#tabs-1"">Pestaña-1</a></li>
+        <li><a href="#tabs-2"">Pestaña-2</a></li>
+        <li><a href="#tabs-3"">Pestaña-3</a></li>
+      </ul>
+      <div id="tabs-1">
+        Pestaña 1
+      </div>
+      <div id="tabs-2">
+        Pestaña 2
+      </div>
+      <div id="tabs-3">
+        Pestaña 3
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <h3>Cuadros de diálogo</h3>
+    <button id="lanzar-popup">Lánzame</button>
+    <div id="popup" title="¿Estas seguro?" style="display: none">
+      <p>Bienvenido a la NASA</p>
+    </div>
+
+    <hr />
+
+    <hr />
+    <h3>Calendario</h3>
+    <input type="text" id="calendario" />
+    <hr />
+
+    <div id="elemento-movido" class="elemento"></div>
+    <div id="area" class="elemento"></div>
 
     <ul class="lista-seleccionable">
       <li>Elder Lilies</li>
