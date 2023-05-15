@@ -75,7 +75,8 @@ body {
   padding: 7px;
 }
 
-.post h2 {
+h2 {
+  font-family: Helvetica, Arial;
   font-size: 30px;
   color: #333;
 }
@@ -184,7 +185,7 @@ footer {
 
 #to-green,
 #to-red,
-#to-blue{
+#to-blue {
   width: 25px;
   height: 25px;
   border: 1px solid white;
@@ -195,21 +196,31 @@ footer {
   cursor: pointer;
 }
 
-#to-green{
+#to-green {
   background: green;
 }
 
-#to-blue{
+#to-blue {
   background: blue;
 }
 
-#to-red{
+#to-red {
   background: red;
 }
 
-.subir{
+.subir {
   color: white;
   text-decoration: none;
   display: block;
   float: right;
+}
+
+#box {
+  width: 60%;
+  float: left;
+  margin-top: 40px;
+}
+
+#acordeon{
+  margin-top: 20px;
 }
