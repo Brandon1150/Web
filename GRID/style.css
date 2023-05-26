@@ -1,0 +1,72 @@
+#jqxGrid .jqx-grid-column-header {
+    font-weight: bold;
+}
+#jqxGrid .jqx-grid-cell {
+    color: rgb(148, 198, 255);
+    font-size: 12px;
+}
+.specialtext {
+    color: orange !important;
+}
+.description {
+    color: whitesmoke !important;
+}
+.sellformat {
+    color: red !important;
+}
+.buyformat {
+    color: greenyellow !important;
+}
+.booleanvalue {
+    color: mistyrose !important;
+    background-color: aquamarine;
+    pointer-events: none;
+    visibility: hidden;
+}
+.quoteonthewire input {
+    background-color: whitesmoke;
+    color: gray !important;
+}
+.quoterequested input {
+    background-color: rgb(231, 86, 60);
+    color: white !important;
+}
+.jqx-grid-cell {
+    border-color: black !important;
+    border-right: none;
+    border-bottom-width: 2px;
+}
+.jqx-grid-cell .jqx-grid-cell-left-align {
+    margin-top: 10px !important;
+}
+.jqx-grid-statusbar {
+    background-color: rgb(22, 22, 22) !important;
+}
+.jqx-grid-statusbar span {
+    color: rgb(148, 198, 255);
+    font-size: 12px;
+}
+
+.tooltip-column {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .tooltip-column:hover {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .tooltip-column:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    white-space: normal;
+    z-index: 9999;
+  }
