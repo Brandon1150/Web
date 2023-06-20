@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
-import { ZapatosComponent } from './zaptos/zapatos.component';
+import { ZapatosComponent } from './zapatos/zapatos.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 

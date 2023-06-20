@@ -351,9 +351,14 @@
   </div>
 
   <!-- Resources -->
-  <h2>Resources</h2>
+  <h2>{{descripcion}}</h2>
   Bienvenido a la NASA>
-<videojuego></videojuego>
+  <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click)="ocultarVideojuegos(true)" *ngIf="mostrar_videojuegos">Mostrar</button>
+
+
+
+<videojuego *ngIf="mostrar_videojuegos"></videojuego>
 <zapatos></zapatos>
 <cursos></cursos>
   <div class="card-container">
