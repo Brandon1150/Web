@@ -2971,10 +2971,8 @@ textarea.jqx-input-fluent:-ms-input-placeholder {
 }
 
 .ink.animate {
-  -webkit-animation: ripple 0.7s ease;
-          animation: ripple 0.7s ease;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ripple 0.7s ease;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jqx-tree-fluent .jqx-checkbox-fluent {
@@ -3001,10 +2999,8 @@ textarea.jqx-input-fluent:-ms-input-placeholder {
 
 .jqx-checkbox-fluent.effect .ink.animate,
 .jqx-radiobutton-fluent.effect .ink.animate {
-  -webkit-animation: checkRipple 0.3s ease;
-          animation: checkRipple 0.3s ease;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation: checkRipple 0.3s ease;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .jqx-checkbox-fluent.effect .ink.active,
@@ -3019,21 +3015,11 @@ textarea.jqx-input-fluent:-ms-input-placeholder {
   transform: scale(2);
 }
 
-@-webkit-keyframes checkRipple {
-  100% {
-    opacity: 0.2;
-    transform: scale(2);
-    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
 @keyframes checkRipple {
   100% {
     opacity: 0.2;
     transform: scale(2);
-    -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .jqx-fill-state-pressed-fluent .jqx-icon-delete-fluent {
@@ -3156,15 +3142,6 @@ textarea.jqx-input-fluent:-ms-input-placeholder {
   color: inherit !important;
 }
 
-@-webkit-keyframes css-spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes css-spinner {
   0% {
     transform: rotate(0deg);
@@ -3188,14 +3165,10 @@ textarea.jqx-input-fluent:-ms-input-placeholder {
   border-color: rgb(0, 120, 212) rgb(199, 224, 244) rgb(199, 224, 244);
   -o-border-image: initial;
      border-image: initial;
-  -webkit-animation-name: css-spinner;
-          animation-name: css-spinner;
-  -webkit-animation-duration: 1.3s;
-          animation-duration: 1.3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
-          animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
+  animation-name: css-spinner;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);
   width: 28px;
   height: 28px;
   position: relative;

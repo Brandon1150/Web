@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #f06291, #fffde7);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 rgb(187, 130, 130);
+  background-color: white;
+  transition: background-color 0.3s ease; /* Transición suave entre tonos */
+}
+.calculator #display {
+  color: rgb(5, 72, 41);
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #igual {
+  height: 130px;
+}
+.calculator #clear {
+  background-color: pink;
+  color: rgb(164, 66, 150);
+}
+.calculator .btn-number {
+  background-color: rgb(139, 86, 224);
+  color: rgb(18, 1, 15);
+}
+.calculator .btn-operator {
+  background-color: pink;
+  color: rgb(8, 26, 67);
+}
+.calculator .btn-equal {
+  background-color: rgb(2, 179, 87);
+  color: rgb(20, 86, 4);
+}
+.calculator.dark {
+  background-color: black;
+}
+.calculator.dark #display {
+  color: white;
+}
+.calculator.dark #clear {
+  background-color: blue;
+  color: white;
+}
+.calculator.dark .btn-number {
+  background-color: greenyellow;
+  color: black;
+  font-weight: 600;
+}
+.calculator.dark .btn-operator {
+  background-color: yellow;
+  color: rgb(245, 4, 217);
+}
+.calculator.dark .btn-equal {
+  background-color: orangered;
+  color: white;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+  transition: background-color 0.3s ease; /* Transición suave entre tonos */
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: white;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
