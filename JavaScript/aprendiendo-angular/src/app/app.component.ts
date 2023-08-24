@@ -1,28 +1,24 @@
 import { Component } from '@angular/core';
-import { configuracion } from './Models/configuracion';
-
-
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title = 'Master de Angular Brandon';
-  public descripcion: string;
-  public mostrar_videojuegos : boolean = true;
- 
+  constructor(private http: HttpClient) { }
 
-  constructor(){
-    this.title = configuracion.titulo;
-    this.descripcion = configuracion.descripcion;
-    
-  }
-
-  ocultarVideojuegos(value:boolean){
-    this.mostrar_videojuegos = value;
-    
+  conectarADB() {
+    this.http.get<any>('http://localhost/db.php')
+      .subscribe(
+        response => {
+          console.log('Conexión exitosa a la base de datos');
+          
+        },
+        error => {
+          console.error('Error de conexión a la base de datos:', error);
+        }
+      );
   }
 }
