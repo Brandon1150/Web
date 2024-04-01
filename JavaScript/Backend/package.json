@@ -1,20 +1,21 @@
 {
-  "name": "api-rest-node.js",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Api Rest Master JS",
+  "description": "API Rest ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "Brandon Arturo",
-  "license": "MIT",
+  "author": "Brandon Arturo Angeles Nieto",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
     "connect-multiparty": "^2.2.0",
     "express": "^4.18.2",
-    "mongoose": "^7.4.3",
-    "nodemon": "^3.0.1",
-    "save": "^2.9.0"
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }

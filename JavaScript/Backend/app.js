@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -6,25 +6,18 @@ var bodyParser = require('body-parser');
 var app = express();
 
 
-//cargar archivos rutas
-
+//Cargar archivos de rutas
 var project_routes = require('./routes/project');
 
 //middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
-
 //CORS
 
-
 //rutas
-
-app.use('/api',project_routes);
-
+app.use('/api', project_routes);
 
 
-
-// exportar
+//exportar
 module.exports = app;
