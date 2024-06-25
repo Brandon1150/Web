@@ -1,0 +1,15 @@
+<router-outlet></router-outlet>
+
+<div *ngIf="paises!=null; else espera">
+  <table border="1">
+    <tr>
+      <td>Pais</td><td>Total de casos</td><td>Total de muertos</td>
+    </tr>
+    <tr *ngFor="let pais of paises.Countries">
+      <td>{{pais.Country}}</td>
+      <td>{{pais.TotalConfirmed}}</td>
+      <td>{{pais.TotalDeaths}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #espera>Esperando datos...</ng-template>
