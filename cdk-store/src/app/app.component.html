@@ -1,0 +1,22 @@
+<mat-toolbar color='primary'>
+  <span>{{ title }}</span>
+  <span class="spacer"></span>
+</mat-toolbar>
+<section class="products">
+  <mat-card class="card" *ngFor="let product of products">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>{{ product.title }}</mat-card-title>
+      <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="product.image" [alt]="product.title">
+    <mat-card-content>
+      <p>
+        {{ product.description }}
+      </p>
+      <p>
+        Price: {{ product.price }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</section>
