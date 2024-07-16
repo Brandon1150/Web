@@ -1,0 +1,23 @@
+sequenceDiagram
+    actor Usuario
+    participant Sistema
+
+    Usuario->>+Sistema: Ingresar palabra
+    Sistema->>Sistema: Verificar longitud > 1
+    alt longitud > 1
+        Sistema->>Sistema: Eliminar espacios y convertir a minúsculas
+        Sistema->>Sistema: Inicializar punteros (inicio = 0, fin = longitud - 1)
+        loop mientras inicio < fin
+            Sistema->>Sistema: Comparar caracter[inicio] con caracter[fin]
+            alt caracteres iguales
+                Sistema->>Sistema: inicio++, fin--
+            else caracteres diferentes
+                Sistema-->>Usuario: No es palíndromo
+                Note over Sistema,Usuario: Finaliza verificación
+            end
+        end
+        Sistema-->>Usuario: Es palíndromo
+    else longitud <= 1
+        Sistema-->>Usuario: No es palíndromo
+    end
+    Sistema-->>-Usuario: Resultado final

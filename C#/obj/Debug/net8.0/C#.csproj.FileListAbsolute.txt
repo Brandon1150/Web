@@ -1,0 +1,15 @@
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.AssemblyInfoInputs.cache
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.AssemblyInfo.cs
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.csproj.CoreCompileInputs.cache
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.sourcelink.json
+C:\wamp64\www\App\Web\C#\bin\Debug\net8.0\C#.exe
+C:\wamp64\www\App\Web\C#\bin\Debug\net8.0\C#.deps.json
+C:\wamp64\www\App\Web\C#\bin\Debug\net8.0\C#.runtimeconfig.json
+C:\wamp64\www\App\Web\C#\bin\Debug\net8.0\C#.dll
+C:\wamp64\www\App\Web\C#\bin\Debug\net8.0\C#.pdb
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.dll
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\refint\C#.dll
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.pdb
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\C#.genruntimeconfig.cache
+C:\wamp64\www\App\Web\C#\obj\Debug\net8.0\ref\C#.dll

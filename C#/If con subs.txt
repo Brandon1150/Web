@@ -1,0 +1,44 @@
+using System;
+
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Random random = new Random();
+        int daysUntilExpiration = random.Next(0, 12); 
+        int discountPercentage = 0;
+        string renewalMessage = "Renew now!";
+
+        if (daysUntilExpiration <= 0)
+        {
+            Console.WriteLine("Your subscription has expired.");
+        }
+        else if (daysUntilExpiration == 1)
+        {
+            discountPercentage = 20;    
+            Console.WriteLine($"Your subscription expires within a day!");
+        }
+        else if (daysUntilExpiration <= 5)
+        {
+            discountPercentage = 10;
+            Console.WriteLine($"Your subscription expires in {daysUntilExpiration} days.");
+        }
+        else if (daysUntilExpiration <= 10)
+        {
+            Console.WriteLine("Your subscription will expire soon.");
+        }
+
+        // Mostrar mensaje de renovación solo si hay un descuento
+        if (discountPercentage > 0)
+        {
+            Console.WriteLine($"{renewalMessage} and save {discountPercentage}%.");
+        }
+        else if (daysUntilExpiration <= 10 && daysUntilExpiration > 1)
+        {
+            Console.WriteLine(renewalMessage);
+        }
+    }
+}
+

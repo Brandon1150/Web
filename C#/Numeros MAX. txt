@@ -1,0 +1,37 @@
+using System;
+
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int firstValue = 500;
+        int secondValue = 600;
+        int largerValue;
+
+        largerValue = Math.Max(firstValue, secondValue);
+            
+            
+             Console.WriteLine(largerValue);
+        
+    }
+}
+
+
+
+//  Se [pueden] buscar por lista
+
+//          List<int> values = new List<int> { 500, 600 };
+//          int largerValue = values.Max();
+//              Console.WriteLine(largerValue);
+
+//  Se pueden puede buscar por arrays
+
+
+
+// using System.Linq;
+
+            // int[] values = { 500, 600 };
+            // int largerValue = values.Max();
+            // Console.WriteLine(largerValue);

@@ -1,0 +1,67 @@
+INICIO DEL PROGRAMA
+
+// Declarar número de asignaciones de examen
+DEFINIR examAssignments COMO 5
+
+// Crear diccionario para almacenar nombres de estudiantes y sus calificaciones
+DEFINIR studentScores COMO nuevo diccionario
+    AGREGAR "Sophia" : [90, 86, 87, 98, 100, 94, 90]
+    AGREGAR "Andrew" : [92, 89, 81, 96, 90, 89]
+    AGREGAR "Emma" : [90, 85, 87, 98, 68, 89, 89, 89]
+    AGREGAR "Logan" : [90, 95, 87, 88, 96, 96]
+
+// Imprimir encabezado
+IMPRIMIR "Student\t\tGrade\n"
+
+// Iterar sobre cada entrada en el diccionario de calificaciones de estudiantes
+PARA CADA entrada EN studentScores
+    OBTENER nombre DEL estudiante
+    OBTENER calificaciones DEL estudiante
+
+    // Calcular el promedio de las calificaciones
+    LLAMAR CalculateAverage(calificaciones, examAssignments)
+    ALMACENAR resultado EN averageScore
+
+    // Obtener la calificación en letra
+    LLAMAR GetLetterGrade(averageScore)
+    ALMACENAR resultado EN letterGrade
+
+    // Imprimir nombre del estudiante, promedio y calificación en letra
+    IMPRIMIR nombre, averageScore, letterGrade
+FIN PARA
+
+// Esperar a que el usuario presione Enter antes de continuar
+IMPRIMIR "\n\rPress the Enter key to continue"
+LEER entrada DEL usuario
+
+FIN DEL PROGRAMA
+
+// Función para calcular el promedio de calificaciones
+FUNCION CalculateAverage(scores, examAssignments)
+    DEFINIR suma COMO 0
+    PARA i DESDE 0 HASTA longitud de scores - 1
+        SI i < examAssignments ENTONCES
+            suma += scores[i]
+        SINO
+            suma += scores[i] / 10
+        FIN SI
+    FIN PARA
+    RETORNAR (decimal)suma / examAssignments
+FIN FUNCION
+
+// Función para obtener la calificación en letra
+FUNCION GetLetterGrade(averageScore)
+    SI averageScore >= 97 ENTONCES RETORNAR "A+"
+    SI averageScore >= 93 ENTONCES RETORNAR "A"
+    SI averageScore >= 90 ENTONCES RETORNAR "A-"
+    SI averageScore >= 87 ENTONCES RETORNAR "B+"
+    SI averageScore >= 83 ENTONCES RETORNAR "B"
+    SI averageScore >= 80 ENTONCES RETORNAR "B-"
+    SI averageScore >= 77 ENTONCES RETORNAR "C+"
+    SI averageScore >= 73 ENTONCES RETORNAR "C"
+    SI averageScore >= 70 ENTONCES RETORNAR "C-"
+    SI averageScore >= 67 ENTONCES RETORNAR "D+"
+    SI averageScore >= 63 ENTONCES RETORNAR "D"
+    SI averageScore >= 60 ENTONCES RETORNAR "D-"
+    SINO RETORNAR "F"
+FIN FUNCION
