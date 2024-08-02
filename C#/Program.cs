@@ -5,78 +5,31 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Creo un diccionario de objetos en este caso nombres y matriz de calificaciones
-        int examAssignments = 5;
-        var studentScores = new Dictionary<string, int[]>
-        {
-            { "Sophia", new int[] { 90, 86, 87, 98, 100, 94, 90 } },
-            { "Andrew", new int[] { 92, 89, 81, 96, 90, 89 } },
-            { "Emma", new int[] { 90, 85, 87, 98, 68, 89, 89, 89 } },
-            { "Logan", new int[] { 90, 95, 87, 88, 96, 96 } }
-        };
+        int[] numbers = { 4, 8, 15, 16, 23, 42 };
+        int total = 0;
+        bool found = false;
 
-        //Imprimo los datos
-        Console.Clear();
-        Console.WriteLine("Student\t\tGrade\n");
+                    foreach (int number in numbers)
+                    {
+                        
+                        total += number;
 
-        //Itero en los scores de estudiantes
-        foreach (var student in studentScores)
-        {
-            //Obtengo los nombres
-            string name = student.Key;
-            //Obtengo los scores
-            int[] scores = student.Value;
+                        if (number == 42)
+                        {
+                         found = true;
 
-            //Calculo el promedio
-            decimal averageScore = CalculateAverage(scores, examAssignments);
-            //Obtengo la calificación
-            string letterGrade = GetLetterGrade(averageScore);
+                        }
 
+                    }
 
+                    if (found) 
+                    {
+                        Console.WriteLine("Set contains 42");
 
-            Console.WriteLine($"{name}\t\t{averageScore:F1}\t{letterGrade}");
-        }
+                    }
 
-        Console.WriteLine("\n\rPress the Enter key to continue");
-        Console.ReadLine();
+                    Console.WriteLine($"Total: {total}");
+
     }
 
-
-
-
-
-
-
-                                                //**************************FUNCIONES************************
-
-    // Función que calcula el promedio
-    static decimal CalculateAverage(int[] scores, int examAssignments)
-    {
-        int sum = 0;
-        for (int i = 0; i < scores.Length; i++)
-        {
-            if (i < examAssignments)
-                sum += scores[i];
-            else
-                sum += scores[i] / 10;
-        }
-        return (decimal)sum / examAssignments;
-    }
-    //Función que calcula la calificación
-    static string GetLetterGrade(decimal averageScore) => averageScore switch
-            {
-                >= 97 => "A+",
-                >= 93 => "A",
-                >= 90 => "A-",
-                >= 87 => "B+",
-                >= 83 => "B",
-                >= 80 => "B-",
-                >= 77 => "C+",
-                >= 73 => "C",
-                >= 70 => "C-",
-                >= 67 => "D+",
-                >= 63 => "D",
-                >= 60 => "D-",
-                _ => "F"
-            };
 }

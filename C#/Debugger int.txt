@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+       
+            int value =5;
+            if( value > 0 ){
+
+                value = 6;
+
+                 value =  value + value; 
+
+            }
+
+
+
+                Console.WriteLine($"El valor de la primera variable es: {value}");
+
+    }
+
+}

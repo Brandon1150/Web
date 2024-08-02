@@ -1,0 +1,25 @@
+flowchart TD
+    A[Cliente] -->|HTTP Request| B(Controlador)
+    B -->|Solicita datos| C{Modelo}
+    C -->|Consulta| D[(Base de datos Access)]
+    D -->|Retorna datos| C
+    C -->|Proporciona datos| B
+    B -->|Pasa datos| E[Vista Razor]
+    E -->|Genera HTML| F[Página web]
+    F -->|HTTP Response| A
+
+    subgraph Aplicación C#
+        B
+        C
+        E
+    end
+
+    subgraph "Modelo (C#)"
+        G[Clases de Modelo]
+        H[Lógica de Negocio]
+        I[Validaciones]
+    end
+
+    C --- G
+    C --- H
+    C --- I
