@@ -1,0 +1,20 @@
+public class Solution {
+    public bool IsPalindrome(int number) {
+        // Convierte el número a una cadena de caracteres
+        string numberAsString = number.ToString();
+
+        int leftIndex = 0; // Índice inicial
+        int rightIndex = numberAsString.Length - 1; // Índice final
+
+        while (leftIndex < rightIndex) {
+            // Comparo los caracteres en las posiciones izquierda y derecha
+            if (numberAsString[leftIndex] != numberAsString[rightIndex]) {
+                return false;
+            }
+            leftIndex++; 
+            rightIndex--;
+        }
+
+        return true; // Es palíndromo
+    }
+}
